@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Travel & Ticket Booking Services | Jagannath Puri Travel Point</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Complete travel assistance services in Puri: Air ticket booking, Train ticket booking, Bus ticket booking, Cab rentals, Hotel bookings, and local sightseeing packages. Contact Ashok: 7008446848.">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Floating Contact Buttons */
+    .floating-btns {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .floating-btns a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .floating-btns a:hover {
+      transform: scale(1.15);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+    }
+
+    .btn-call-float {
+      background: #f85959;
+    }
+
+    /* Service Cards */
+    .service-box-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 35px 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 4px solid #f85959;
+    }
+
+    .service-box-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-box-card .service-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f85959, #ff8a5c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .service-box-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .service-box-card p {
+      font-size: 14.5px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .service-box-card .features-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 15px 0 25px;
+    }
+
+    .service-box-card .features-list li {
+      font-size: 13.5px;
+      color: #555;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .service-box-card .features-list li i {
+      color: #25D366;
+      margin-right: 8px;
+    }
+
+    .service-box-card .btn-service-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .service-box-card .btn-service-action:hover {
+      background: #1da851;
+      color: #fff;
+    }
+
+    .service-box-card .btn-call-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #207dff;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-left: 8px;
+    }
+
+    .service-box-card .btn-call-action:hover {
+      background: #1062d4;
+      color: #fff;
+    }
+
+    .fleet-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .fleet-item h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Jagannath Puri<span>Travel Point</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="destination.html" class="nav-link">Tourist Places</a></li>
+          <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels & Resorts</a></li>
+          <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="hero-wrap hero-wrap-2 js-fullheight"
+    style="background-image: url('images/website-images/services.png');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                  class="fa fa-chevron-right"></i></a></span> <span>Services <i class="fa fa-chevron-right"></i></span>
+          </p>
+          <h1 class="mb-0 bread">Travel & Booking Services</h1>
+          <p class="text-white mt-3" style="font-size: 18px;">From flight and train tickets to custom cabs and hotel
+            stays, Ashok provides personalized assistance daily from 4:00 AM to 11:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center pb-4">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">Complete Travel Assistance in Puri & Odisha</span>
+          <h2 class="mb-4">Services Offered by Ashok</h2>
+          <p style="max-width: 780px; margin: 0 auto;">We make your Odisha yatra convenient and memorable. All ticket
+            bookings and reservations are enquiry-based with upfront transparent pricing and zero surprise charges.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- 1. Air Ticket Booking Assistance -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-plane"></span></div>
+              <h3>Air Ticket Booking</h3>
+              <p>Complete assistance for domestic and international flight bookings to and from Biju Patnaik
+                International Airport (BBI), Bhubaneswar.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> Flights from Delhi, Mumbai, Kolkata, Bengaluru</li>
+                <li><i class="fa fa-check-circle"></i> Best flight options & timing matching</li>
+                <li><i class="fa fa-check-circle"></i> Airport pickup & drop cab coordination</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20assistance%20with%20Air%20Ticket%20booking."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Train Ticket Booking Assistance -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-train"></span></div>
+              <h3>Train Ticket Booking</h3>
+              <p>Hassle-free train ticket booking assistance for Puri (PURI), Bhubaneswar (BBS), and Khurda Road (KUR)
+                railway stations.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> Regular, Tatkal & Premium Tatkal guidance</li>
+                <li><i class="fa fa-check-circle"></i> Vande Bharat, Rajdhani, Express trains</li>
+                <li><i class="fa fa-check-circle"></i> Puri station luggage & taxi assistance</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20assistance%20with%20Train%20Ticket%20booking."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Bus Ticket Booking Assistance -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-bus"></span></div>
+              <h3>Bus Ticket Booking</h3>
+              <p>Intercity bus ticket bookings for AC Volvo, sleeper coaches, and semi-sleeper buses across Odisha and
+                neighbouring states.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> Direct buses to Kolkata, Visakhapatnam, Raipur</li>
+                <li><i class="fa fa-check-circle"></i> OSRTC and private luxury bus seats</li>
+                <li><i class="fa fa-check-circle"></i> Convenient boarding point guidance in Puri</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20assistance%20with%20Bus%20Ticket%20booking."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Hotel & Resort Room Booking -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-bed"></span></div>
+              <h3>Hotel & Resort Booking</h3>
+              <p>Assistance in finding and booking rooms in verified sea-facing resorts, budget family hotels, and
+                temple-vicinity guest houses.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> Marine Drive & Swargadwar Beach options</li>
+                <li><i class="fa fa-check-circle"></i> Transparent pricing with actual rates confirmed</li>
+                <li><i class="fa fa-check-circle"></i> Zero hidden booking charges or surprise deductions</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20assistance%20with%20Hotel%20or%20Resort%20booking%20in%20Puri."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Local Sightseeing in Puri -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-map-signs"></span></div>
+              <h3>Local Sightseeing in Puri</h3>
+              <p>Well-coordinated sightseeing trips covering Sri Jagannath Temple, Golden Beach, Swargadwar, Gundicha
+                Temple, and local attractions.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> Early morning & evening temple timings advice</li>
+                <li><i class="fa fa-check-circle"></i> Clean AC car with experienced local driver</li>
+                <li><i class="fa fa-check-circle"></i> Mahaprasad arrangements & local guide support</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20book%20a%20Local%20Puri%20Sightseeing%20tour."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Odisha Tour & Sightseeing Planning -->
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="service-box-card w-100">
+            <div>
+              <div class="service-icon"><span class="fa fa-compass"></span></div>
+              <h3>Odisha Tour Trip Planning</h3>
+              <p>End-to-end trip planning for popular circuits: Konark, Chilika Lake, Raghurajpur, Kantilo, Ram Mandir,
+                Cuttack Chandi, and Bhubaneswar.</p>
+              <ul class="features-list">
+                <li><i class="fa fa-check-circle"></i> 1-Day, 2-Day, and 4-Day customized circuits</li>
+                <li><i class="fa fa-check-circle"></i> Dedicated private vehicle with transparent tariff</li>
+                <li><i class="fa fa-check-circle"></i> Family, couple, and senior citizen-friendly routes</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20plan%20a%20Custom%20Odisha%20Tour."
+                target="_blank" class="btn-service-action"><i class="fa fa-whatsapp"></i> Enquire</a>
+              <a href="tel:7008446848" class="btn-call-action"><i class="fa fa-phone"></i> Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fleet / Cab Options -->
+      <div class="row mt-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">Comfortable Travel Vehicles</span>
+          <h2 class="mb-4">Available Cabs & Vehicles for Sightseeing</h2>
+          <p>All vehicles are well-maintained, fully air-conditioned, and chauffeured by courteous, background-verified
+            drivers with thorough knowledge of Odisha roads.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-6 ftco-animate">
+          <div class="fleet-item">
+            <div style="font-size: 36px; color: #f85959; margin-bottom: 10px;"><i class="fa fa-car"></i></div>
+            <h4>Sedan (Dzire / Etios)</h4>
+            <p class="text-muted" style="font-size: 13px;">Ideal for 3–4 passengers with luggage. Perfect for Konark &
+              Chilika day trips.</p>
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20a%20Sedan%20cab%20in%20Puri."
+              target="_blank" class="btn btn-outline-primary btn-sm mt-2">Get Quote</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 ftco-animate">
+          <div class="fleet-item">
+            <div style="font-size: 36px; color: #f85959; margin-bottom: 10px;"><i class="fa fa-car"></i></div>
+            <h4>SUV (Ertiga / Bolero)</h4>
+            <p class="text-muted" style="font-size: 13px;">Comfortable seating for 5–6 passengers. Great for family
+              outings & temples.</p>
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20an%20Ertiga%20SUV%20cab%20in%20Puri."
+              target="_blank" class="btn btn-outline-primary btn-sm mt-2">Get Quote</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 ftco-animate">
+          <div class="fleet-item">
+            <div style="font-size: 36px; color: #f85959; margin-bottom: 10px;"><i class="fa fa-car"></i></div>
+            <h4>Innova / Crysta</h4>
+            <p class="text-muted" style="font-size: 13px;">Premium luxury seating for 6–7 passengers with ample luggage
+              space.</p>
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20an%20Innova%20Crysta%20cab%20in%20Puri."
+              target="_blank" class="btn btn-outline-primary btn-sm mt-2">Get Quote</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 ftco-animate">
+          <div class="fleet-item">
+            <div style="font-size: 36px; color: #f85959; margin-bottom: 10px;"><i class="fa fa-bus"></i></div>
+            <h4>Tempo Traveller</h4>
+            <p class="text-muted" style="font-size: 13px;">12–26 seater pushback AC vans for large pilgrim groups and
+              yatris.</p>
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20need%20a%20Tempo%20Traveller%20in%20Puri."
+              target="_blank" class="btn btn-outline-primary btn-sm mt-2">Get Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Policy Notice -->
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div class="p-4 p-md-5 text-center"
+            style="background: linear-gradient(135deg, #102a45, #001f3f); border-radius: 12px; color: #fff;">
+            <h3 style="color: #f85959; font-weight: 700; margin-bottom: 12px;">Have Questions or Need an Immediate
+              Booking?</h3>
+            <p style="max-width: 750px; margin: 0 auto 20px; font-size: 16px; opacity: 0.9;">Ashok is available daily
+              from 4:00 AM to 11:00 PM on call and WhatsApp. Simply message your requirements, travel dates, and
+              passenger count for instant quote confirmation.</p>
+            <div class="d-flex justify-content-center flex-wrap" style="gap: 15px;">
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20would%20like%20to%20enquire%20about%20travel%20services%20in%20Puri."
+                target="_blank" class="btn btn-primary px-4 py-3" style="font-weight: 600; font-size: 15px;"><i
+                  class="fa fa-whatsapp mr-2"></i> WhatsApp: 7008446848</a>
+              <a href="tel:7008446848" class="btn btn-white px-4 py-3"
+                style="font-weight: 600; font-size: 15px; background: #fff; color: #102a45;"><i
+                  class="fa fa-phone mr-2"></i> Call: 7008446848</a>
+              <a href="tel:9778810230" class="btn btn-outline-light px-4 py-3"
+                style="font-weight: 600; font-size: 15px;"><i class="fa fa-phone mr-2"></i> Alt: 9778810230</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg); margin-top: 50px;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Jagannath Puri Travel Point</h2>
+            <p>Your trusted local travel assistance partner in Puri, Odisha. Managed with dedication by Ashok to ensure
+              smooth pilgrimage and sightseeing experiences.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://wa.me/917008446848" target="_blank"><span
+                    class="fa fa-whatsapp"></span></a></li>
+              <li class="ftco-animate"><a href="tel:7008446848"><span class="fa fa-phone"></span></a></li>
+              <li class="ftco-animate"><a href="contact.html"><span class="fa fa-map-marker"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block">Home</a></li>
+              <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Tourist Places</a></li>
+              <li><a href="hotel.html" class="py-2 d-block">Hotels & Resorts</a></li>
+              <li><a href="services.html" class="py-2 d-block">Travel & Ticket Services</a></li>
+              <li><a href="contact.html" class="py-2 d-block">Contact Ashok</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Our Services</h2>
+            <ul class="list-unstyled">
+              <li><a href="services.html" class="py-2 d-block">Air Ticket Booking Assistance</a></li>
+              <li><a href="services.html" class="py-2 d-block">Train Ticket Booking Assistance</a></li>
+              <li><a href="services.html" class="py-2 d-block">Bus Ticket Booking Assistance</a></li>
+              <li><a href="services.html" class="py-2 d-block">Hotel & Resort Booking</a></li>
+              <li><a href="services.html" class="py-2 d-block">Local Sightseeing in Puri</a></li>
+              <li><a href="services.html" class="py-2 d-block">Custom Odisha Tour Planning</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Business & Contact Info</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map-marker"></span><span class="text">Marine Drive Road, Swargadwar Road,
+                    Puri, Odisha</span></li>
+                <li><a href="tel:7008446848"><span class="icon fa fa-phone"></span><span class="text">+91 7008446848
+                      (Ashok)</span></a></li>
+                <li><a href="tel:9778810230"><span class="icon fa fa-phone"></span><span class="text">+91
+                      9778810230</span></a></li>
+                <li><span class="icon fa fa-clock-o"></span><span class="text">Daily: 4:00 AM – 11:00 PM</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> Jagannath Puri Travel Point. All rights reserved
+            | Managed by Ashok, Puri, Odisha.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-btns">
+    <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20would%20like%20to%20enquire%20about%20travel%20services%20in%20Puri."
+      target="_blank" class="btn-whatsapp" title="Chat on WhatsApp">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    <a href="tel:7008446848" class="btn-call-float" title="Call Ashok Now">
+      <i class="fa fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D41" />
+    </svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

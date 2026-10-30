@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tourist Places in Puri & Odisha | Jagannath Puri Travel Point</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Explore popular tourist places around Puri and Odisha with Jagannath Puri Travel Point. Tours to Jagannath Temple, Kantilo Nilamadhaba, Ram Mandir, Sakhigopal, Raghurajpur, Cuttack Chandi, Chilika Lake, Konark, and more. Contact Ashok: 7008446848.">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Floating Contact Buttons */
+    .floating-btns {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .floating-btns a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .floating-btns a:hover {
+      transform: scale(1.15);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+    }
+
+    .btn-call-float {
+      background: #f85959;
+    }
+
+    /* Enquiry Button for Place Cards */
+    .project-wrap .btn-enquire {
+      display: inline-block;
+      background: #f85959;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 10px;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .project-wrap .btn-enquire:hover {
+      background: #e04848;
+      color: #fff;
+    }
+
+    .project-wrap .btn-call-sm {
+      display: inline-block;
+      background: #207dff;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-left: 6px;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .project-wrap .btn-call-sm:hover {
+      background: #1062d4;
+      color: #fff;
+    }
+
+    /* 4-Card Grid & Container Styles */
+    .container-wide {
+      max-width: 1360px !important;
+      width: 100%;
+    }
+
+    .places-grid .project-wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+    }
+
+    .places-grid .project-wrap:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .places-grid .project-wrap .img {
+      height: 200px;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+    }
+
+    .places-grid .project-wrap .text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 14px !important;
+    }
+
+    .places-grid .project-wrap .text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 1.35;
+    }
+
+    .places-grid .project-wrap .text .location {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .places-grid .project-wrap .text p.place-desc {
+      font-size: 12.5px;
+      color: #666;
+      line-height: 1.45;
+      margin-bottom: 10px;
+      flex-grow: 1;
+    }
+
+    .places-grid .project-wrap ul {
+      margin-bottom: 12px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .places-grid .project-wrap ul li {
+      font-size: 11.5px;
+      color: #555;
+      margin-bottom: 3px;
+    }
+
+    .places-grid .card-action-btns {
+      display: flex;
+      gap: 6px;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    .places-grid .card-action-btns .btn-enquire {
+      flex: 1;
+      background: #25D366;
+      color: #fff;
+      padding: 8px 4px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      transition: background 0.3s;
+    }
+
+    .places-grid .card-action-btns .btn-enquire:hover {
+      background: #1da851;
+      color: #fff;
+    }
+
+    .places-grid .card-action-btns .btn-call-sm {
+      flex: 1;
+      background: #f85959;
+      color: #fff;
+      padding: 8px 4px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      transition: background 0.3s;
+    }
+
+    .places-grid .card-action-btns .btn-call-sm:hover {
+      background: #e04848;
+      color: #fff;
+    }
+
+    .badge-timing {
+      display: inline-block;
+      background: rgba(248, 89, 89, 0.1);
+      color: #f85959;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Jagannath Puri<span>Travel Point</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item active"><a href="destination.html" class="nav-link">Tourist Places</a></li>
+          <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels & Resorts</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="hero-wrap hero-wrap-2 js-fullheight"
+    style="background-image: url('images/website-images/cuttack-chandi-temple.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                  class="fa fa-chevron-right"></i></a></span> <span>Tourist Places <i
+                class="fa fa-chevron-right"></i></span></p>
+          <h1 class="mb-0 bread">Explore Odisha Destinations</h1>
+          <p class="text-white mt-3" style="font-size: 18px;">Discover ancient temples, golden beaches, artistic
+            heritage villages, and serene lagoons with local expert guidance from Ashok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="search-wrap-1 ftco-animate">
+            <form action="contact.html" class="search-property-1">
+              <div class="row no-gutters">
+                <div class="col-lg d-flex">
+                  <div class="form-group p-4 border-0">
+                    <label for="#">Destination of Interest</label>
+                    <div class="form-field">
+                      <div class="icon"><span class="fa fa-search"></span></div>
+                      <input type="text" class="form-control"
+                        placeholder="e.g. Konark, Chandrabhaga, Chilika, Lingaraj, Nandankanan">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg d-flex">
+                  <div class="form-group p-4">
+                    <label for="#">Trip Date</label>
+                    <div class="form-field">
+                      <div class="icon"><span class="fa fa-calendar"></span></div>
+                      <input type="text" class="form-control checkin_date" placeholder="Preferred Travel Date">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg d-flex">
+                  <div class="form-group p-4">
+                    <label for="#">Tour Type</label>
+                    <div class="form-field">
+                      <div class="select-wrap">
+                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                        <select name="" id="" class="form-control">
+                          <option value="">Konark Sun Temple & Marine Drive</option>
+                          <option value="">Chandrabhaga Beach Sunrise</option>
+                          <option value="">Chilika Lake Dolphin Cruise</option>
+                          <option value="">Lingaraj Temple Pilgrimage</option>
+                          <option value="">Dhauligiri Peace Pagoda</option>
+                          <option value="">Khandagiri & Udayagiri Caves</option>
+                          <option value="">Nandankanan Zoological Park Safari</option>
+                          <option value="">Custom Odisha Sightseeing Package</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg d-flex">
+                  <div class="form-group d-flex w-100 border-0">
+                    <div class="form-field w-100 align-items-center d-flex">
+                      <a href="https://wa.me/917008446848?text=Hello%20Ashok%20ji%2C%20I%20want%20to%20plan%20a%20tour%20in%20Puri%20and%20Odisha."
+                        target="_blank"
+                        class="align-self-stretch form-control btn btn-primary text-center d-flex align-items-center justify-content-center"
+                        style="color: #fff !important; font-weight: 600;">Enquire on WhatsApp</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container container-wide">
+      <div class="row justify-content-center pb-4">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">Sacred Shrines, Heritage & Nature</span>
+          <h2 class="mb-4">Popular Places to Visit Around Puri & Odisha</h2>
+          <p>All tour packages, cab rentals, and sightseeing trips are customizable. Actual pricing is confirmed upfront
+            on enquiry with complete transparency.</p>
+        </div>
+      </div>
+
+      <div class="row places-grid">
+
+        <!-- 1. Chandrabhaga Beach -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chandrabhaga%20Beach%20tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Chandrabhaga.jpg');">
+              <span class="price">Scenic Beach</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Sunrise / Half Day</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chandrabhaga%20Beach%20tour."
+                  target="_blank">Chandrabhaga Beach</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Konark Marine Drive</p>
+              <p class="place-desc">Famous Blue Flag beach known for spectacular golden sunrises, peaceful waves, and
+                coastal beauty.</p>
+              <ul>
+                <li><span class="flaticon-sun-umbrella"></span> Golden Beach Coast</li>
+                <li><span class="flaticon-mountains"></span> Scenic Sunrise View</li>
+                <li><span class="flaticon-car"></span> Marine Drive AC Cab</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chandrabhaga%20Beach%20tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Konark Sun Temple -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Konark%20Sun%20Temple%20tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Konark_Temple.jpg');">
+              <span class="price">UNESCO Heritage</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Full Day (35 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Konark%20Sun%20Temple%20tour."
+                  target="_blank">Konark Sun Temple</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Konark, Puri</p>
+              <p class="place-desc">13th-century architectural marvel built as a colossal 24-wheeled chariot of Sun God
+                Surya with intricate stone carvings.</p>
+              <ul>
+                <li><span class="flaticon-museum"></span> UNESCO Monument</li>
+                <li><span class="flaticon-tour-guide"></span> Chariot Stone Wheels</li>
+                <li><span class="flaticon-car"></span> Sedan / SUV Available</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Konark%20Sun%20Temple%20tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Dhauligiri (Peace Pagoda) -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Dhauligiri%20Shanti%20Stupa%20tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Dhauli_Giri.jpg');">
+              <span class="price">Peace Pagoda</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> En-route (55 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Dhauligiri%20Shanti%20Stupa%20tour."
+                  target="_blank">Dhauligiri</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Dhauli Hill, Daya River</p>
+              <p class="place-desc">Site of the Kalinga War where Emperor Ashoka embraced Buddhism. Features the white
+                Shanti Stupa and rock edicts.</p>
+              <ul>
+                <li><span class="flaticon-monument"></span> Buddhist Shanti Stupa</li>
+                <li><span class="flaticon-route"></span> Ancient Ashokan Edicts</li>
+                <li><span class="flaticon-car"></span> En-route Sightseeing</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Dhauligiri%20Shanti%20Stupa%20tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Lingaraj Temple -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Lingaraj%20Temple%20tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Lingaraj_Temple.jpg');">
+              <span class="price">Temple City</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Full Day (60 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Lingaraj%20Temple%20tour."
+                  target="_blank">Lingaraj Temple</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Old Town, Bhubaneswar</p>
+              <p class="place-desc">11th-century Kalinga masterpiece dedicated to Lord Harihara with a 180-ft spire and
+                sacred Bindu Sagar lake.</p>
+              <ul>
+                <li><span class="flaticon-temple"></span> 1000-Year Ancient Shrine</li>
+                <li><span class="flaticon-route"></span> Sacred Bindu Sagar</li>
+                <li><span class="flaticon-car"></span> AC Taxi from Puri</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Lingaraj%20Temple%20tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Khandagiri -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Khandagiri%20Caves%20trip."
+              target="_blank" class="img" style="background-image: url('images/visit/Khandagiri.jpg');">
+              <span class="price">Ancient Caves</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Half Day (65 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Khandagiri%20Caves%20trip."
+                  target="_blank">Khandagiri</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Khandagiri, Bhubaneswar</p>
+              <p class="place-desc">Ancient Jain rock-cut caves from the 2nd century BC featuring Barabhuji Gumpha, city
+                views, and Jain shrines.</p>
+              <ul>
+                <li><span class="flaticon-museum"></span> Rock-Cut Jain Caves</li>
+                <li><span class="flaticon-mountains"></span> Hilltop Panoramic View</li>
+                <li><span class="flaticon-tour-guide"></span> Guided Heritage Walk</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Khandagiri%20Caves%20trip."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Udayagiri -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Udayagiri%20Caves%20trip."
+              target="_blank" class="img" style="background-image: url('images/visit/Udayagiri.jpg');">
+              <span class="price">Rock Heritage</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Half Day (65 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Udayagiri%20Caves%20trip."
+                  target="_blank">Udayagiri</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Udayagiri, Bhubaneswar</p>
+              <p class="place-desc">Complex of 18 rock-cut caves including Rani Gumpha and Hathi Gumpha bearing Emperor
+                Kharavela's inscriptions.</p>
+              <ul>
+                <li><span class="flaticon-museum"></span> Rani & Hathi Gumpha</li>
+                <li><span class="flaticon-tour-guide"></span> Kharavela Inscriptions</li>
+                <li><span class="flaticon-car"></span> Round-trip AC Vehicle</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Udayagiri%20Caves%20trip."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Nandankanan -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Nandankanan%20Zoological%20Park%20tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Nandankanan_Wildlife.jpg');">
+              <span class="price">Wildlife Safari</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Full Day (75 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Nandankanan%20Zoological%20Park%20tour."
+                  target="_blank">Nandankanan</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Chandaka Forest, BBSR</p>
+              <p class="place-desc">Renowned zoological park and botanical sanctuary famous for White Tiger breeding,
+                Lion safari, and lake boating.</p>
+              <ul>
+                <li><span class="flaticon-mountains"></span> White Tiger & Lion Safari</li>
+                <li><span class="flaticon-boat"></span> Kanjia Lake Boating</li>
+                <li><span class="flaticon-car"></span> Family Day Trip Cab</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Nandankanan%20Zoological%20Park%20tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Chilika Lake Dolphin Tour -->
+        <div class="col-lg-3 col-md-6 mb-4 ftco-animate">
+          <div class="project-wrap">
+            <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chilika%20Lake%20Dolphin%20Tour."
+              target="_blank" class="img" style="background-image: url('images/visit/Chilika_Dolphin.jpg');">
+              <span class="price">Wildlife Cruise</span>
+            </a>
+            <div class="text">
+              <span class="badge-timing"><i class="fa fa-clock-o mr-1"></i> Full Day (50 km)</span>
+              <h3><a
+                  href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chilika%20Lake%20Dolphin%20Tour."
+                  target="_blank">Chilika Lake Dolphin Tour</a></h3>
+              <p class="location"><span class="fa fa-map-marker"></span> Satapada, Chilika Lake</p>
+              <p class="place-desc">Boat cruise on Asia's largest lagoon to spot rare Irrawaddy dolphins, visit Rajhans
+                Island, and Sea Mouth.</p>
+              <ul>
+                <li><span class="flaticon-boat"></span> Speedboat Lagoon Cruise</li>
+                <li><span class="flaticon-sea"></span> Irrawaddy Dolphin Sighting</li>
+                <li><span class="flaticon-car"></span> Round-trip AC Vehicle</li>
+              </ul>
+              <div class="card-action-btns">
+                <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20want%20to%20enquire%20about%20Chilika%20Lake%20Dolphin%20Tour."
+                  target="_blank" class="btn-enquire"><i class="fa fa-whatsapp mr-1"></i> WhatsApp</a>
+                <a href="tel:7008446848" class="btn-call-sm"><i class="fa fa-phone mr-1"></i> Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Booking Notice Card -->
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div class="p-4 p-md-5 text-center"
+            style="background: linear-gradient(135deg, #102a45, #001f3f); border-radius: 12px; color: #fff;">
+            <h3 style="color: #f85959; font-weight: 700; margin-bottom: 12px;">Need a Tailored Itinerary for Puri &
+              Odisha?</h3>
+            <p style="max-width: 750px; margin: 0 auto 20px; font-size: 16px; opacity: 0.9;">Ashok and the team at
+              Jagannath Puri Travel Point are available daily from 4:00 AM to 11:00 PM to help you design the perfect
+              pilgrimage and sightseeing plan. Clean AC vehicles, polite local drivers, and 100% transparent rates
+              confirmed on enquiry.</p>
+            <div class="d-flex justify-content-center flex-wrap" style="gap: 15px;">
+              <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20please%20help%20me%20design%20a%20customized%20Odisha%20tour%20itinerary."
+                target="_blank" class="btn btn-primary px-4 py-3" style="font-weight: 600; font-size: 15px;"><i
+                  class="fa fa-whatsapp mr-2"></i> Chat with Ashok on WhatsApp</a>
+              <a href="tel:7008446848" class="btn btn-white px-4 py-3"
+                style="font-weight: 600; font-size: 15px; background: #fff; color: #102a45;"><i
+                  class="fa fa-phone mr-2"></i> Call: 7008446848</a>
+              <a href="tel:9778810230" class="btn btn-outline-light px-4 py-3"
+                style="font-weight: 600; font-size: 15px;"><i class="fa fa-phone mr-2"></i> Alt: 9778810230</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg); margin-top: 50px;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Jagannath Puri Travel Point</h2>
+            <p>Your trusted local travel assistance partner in Puri, Odisha. Managed with dedication by Ashok to ensure
+              smooth pilgrimage and sightseeing experiences.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://wa.me/917008446848" target="_blank"><span
+                    class="fa fa-whatsapp"></span></a></li>
+              <li class="ftco-animate"><a href="tel:7008446848"><span class="fa fa-phone"></span></a></li>
+              <li class="ftco-animate"><a href="contact.html"><span class="fa fa-map-marker"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="py-2 d-block">Home</a></li>
+              <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Tourist Places</a></li>
+              <li><a href="hotel.html" class="py-2 d-block">Hotels & Resorts</a></li>
+              <li><a href="services.html" class="py-2 d-block">Travel & Ticket Services</a></li>
+              <li><a href="contact.html" class="py-2 d-block">Contact Ashok</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Popular Tours</h2>
+            <ul class="list-unstyled">
+              <li><a href="destination.html" class="py-2 d-block">Kantilo Nilamadhaba Temple</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Ram Mandir & Puri Local</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Sakhigopal & Raghurajpur</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Konark & Chandrabhaga Beach</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Kalijai Temple Chilika</a></li>
+              <li><a href="destination.html" class="py-2 d-block">Cuttack Chandi & Bhubaneswar</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md pt-5">
+          <div class="ftco-footer-widget pt-md-5 mb-4">
+            <h2 class="ftco-heading-2">Business & Contact Info</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map-marker"></span><span class="text">Marine Drive Road, Swargadwar Road,
+                    Puri, Odisha</span></li>
+                <li><a href="tel:7008446848"><span class="icon fa fa-phone"></span><span class="text">+91 7008446848
+                      (Ashok)</span></a></li>
+                <li><a href="tel:9778810230"><span class="icon fa fa-phone"></span><span class="text">+91
+                      9778810230</span></a></li>
+                <li><span class="icon fa fa-clock-o"></span><span class="text">Daily: 4:00 AM – 11:00 PM</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> Jagannath Puri Travel Point. All rights reserved
+            | Managed by Ashok, Puri, Odisha.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-btns">
+    <a href="https://wa.me/917008446848?text=Hello%20Ashok%2C%20I%20am%20visiting%20Puri%20and%20would%20like%20to%20enquire%20about%20travel%20assistance."
+      target="_blank" class="btn-whatsapp" title="Chat on WhatsApp">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    <a href="tel:7008446848" class="btn-call-float" title="Call Ashok Now">
+      <i class="fa fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D41" />
+    </svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
